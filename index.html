@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="IOPApp">
+<head>
+    <meta charset="utf-8" />
+    <!-- disable zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title> TV Guide </title>
+    <link href="temp/demo.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div ng-controller='search-controller'>
+        <div class='search-head'>
+            <h1>Search</h1>
+            <searchinput currentSearchTerm='{{ searchTerm }}'></searchinput>
+            <autocomplete  autocompleteData='autoCompleteData'></autocomplete>
+            <filters  filterData='autoCompleteData'></filters>
+        </div>
+        <div class='search-body'>
+            <searchresults searchData='searchData'></searchresults>
+        </div>
+    </div>
+
+    <script src="js/iop-data-2.js" type="text/javascript"></script>
+    <script src="temp/bower.js" type="text/javascript"></script>
+    <script src="dist/tvguide.js" type="text/javascript"></script>
+    <script src="js/controllers/search-controller.js" type="text/javascript"></script>
+
+</body>
+</html>

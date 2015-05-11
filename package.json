@@ -1,0 +1,23 @@
+{
+  "name": "sky-iop-tvguide",
+  "version": "0.12.0",
+  "description": "The CSS/JS build processor for the SKY TV Guide project.",
+  "author": "Tim Coenradi <tim.coenradi@solnet.co.nz>",
+  "license": "All rights reserved",
+  "keywords": [
+    "skytv"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.solnetsolutions.co.nz:sky-iop/sky-iop-tvguide.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-dest": "^0.2.2",
+    "gulp-filter": "^2.0.2",
+    "gulp-sass": "^1.3.3",
+    "main-bower-files": "^2.6.2"
+  }
+}

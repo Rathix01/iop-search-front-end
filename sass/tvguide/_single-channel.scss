@@ -1,0 +1,124 @@
+.single-channel-guide {
+	
+	height: 100%;
+
+	.single-drag {
+		height:100% !important;
+	}
+
+
+	.single-channel-list {
+		
+		max-width: 900px;
+		margin:0px auto;
+		overflow:hidden;
+
+		.single-channel-list-item {
+			height: 40px;
+			line-height:40px;
+			background:white;
+			border-bottom: solid 1px #ccc;
+			font-family: $tvguide-font-heading;
+			position:relative;
+
+			.event-time {
+				display:inline-block;
+				position:absolute;
+				left:60px;
+			}
+		
+			.event-title {
+				display:inline-block;
+				position:absolute;
+				left:200px;
+			}
+		}
+
+		.date-row {
+			background-color: #222;
+			color:white;
+			height: 40px;
+			line-height:40px;
+			text-indent: 60px;
+			font-family: $tvguide-font-heading;
+		}
+
+		.on-now-true {
+			border-left: solid 8px #FF0066;
+
+			.event-title {
+				color:  #FF0066;
+			}
+		}
+
+		.single-channel-logo {
+			width:100px;
+			max-width:100px;
+			border:solid 1px red;
+		}
+
+	}
+
+
+	.detail-node {
+		position:relative;
+		height:100%;
+		margin-top:-15px;
+		margin-left:20px;
+	}
+	.detail-node h2 {
+		font-family: $tvguide-font-heading;
+		line-height: 20px;
+		color: #FF0066;
+	}
+
+	.detail-node .detail-summary {
+		margin-top: -10px;
+		margin-bottom: 10px;
+		font-family: $tvguide-font-heading;
+	}
+	.detail-node .detail-synopsis {
+		color:rgb(169,169,169);
+		line-height: 22px;
+	}
+	.detail-text {
+		position:relative;
+	}
+	.detail-text, .detail-image {
+		height:120px;
+	}
+	.detail-image {
+		border:solid 1px white;
+		width:200px;
+		position:absolute;
+		text-align: center;
+		line-height: 110px;
+		display:none;
+	}
+	.detail-text {
+		/*margin-left: 220px;*/
+
+	}
+	.detail-node .background-strip {
+		content:' ';
+		background:#CCC;
+		position:absolute;
+		left:-2500px;
+		top:0px;
+		width:10000px;
+		z-index:-1;
+	}
+	.detail-node .close-detail {
+		position:absolute;
+		top:0px;
+		right:15px;
+		border:solid 2px #fff;
+		height:20px;
+		width:20px;
+		border-radius: 20px;
+		text-indent: 6px;
+		line-height: 18px;
+		display:block;
+		cursor: pointer;
+	}
+}

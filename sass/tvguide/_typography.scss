@@ -1,0 +1,246 @@
+/* Fonts n stuff */
+
+@font-face {
+    font-family: 'IOP Icons';
+    src:url('../fonts/iop.eot?hm4x1x');
+    src:url('../fonts/iop.eot?#iefixhm4x1x') format('embedded-opentype'),
+        url('../fonts/iop.woff?hm4x1x') format('woff'),
+        url('../fonts/iop.ttf?hm4x1x') format('truetype'),
+        url('../fonts/iop.svg?hm4x1x#iop') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid SKY';
+    src: url('../fonts/euclid-sky-bold.eot');
+    src: url('../fonts/euclid-sky-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/euclid-sky-bold.woff') format('woff'),
+         url('../fonts/euclid-sky-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VideoJS';
+    src: url('../fonts/vjs.eot');
+    src: url('../fonts/vjs.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/vjs.woff') format('woff'),
+         url('../fonts/vjs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'IOP Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+}
+
+
+/* Angular Social icon configuration */
+.ng-social-facebook .ng-social-icon:before {
+    content: '\e605';
+}
+.ng-social-twitter .ng-social-icon:before {
+    content: '\e606';
+}
+.ng-social-google-plus .ng-social-icon:before {
+    content: '\e611';
+}
+.ng-social-pinterest .ng-social-icon:before {
+    content: '\e612';
+}
+
+/* IOP icon webfont configuration */
+
+.icon-iop-pdf:before {
+    content: "\e62e";
+}
+
+.icon-iop-parental-control:before {
+    content: "\e618";
+}
+
+.icon-iop-ticket:before {
+    content: "\e619";
+}
+
+.icon-iop-notification:before {
+    content: "\e61a";
+}
+
+.icon-iop-cheque:before {
+    content: "\e61b";
+}
+
+.icon-iop-calendar:before {
+    content: "\e61c";
+}
+
+.icon-iop-skygo-desktop:before {
+    content: "\e61d";
+}
+
+.icon-iop-skygo-laptop:before {
+    content: "\e61e";
+}
+
+.icon-iop-skygo-tablet:before {
+    content: "\e61f";
+}
+
+.icon-iop-skygo-mobile:before {
+    content: "\e620";
+}
+
+.icon-iop-checked:before {
+    content: "\e621";
+}
+
+.icon-iop-help:before {
+    content: "\e622";
+}
+
+.icon-iop-mobile-large:before {
+    content: "\e623";
+}
+
+.icon-iop-credit-card:before {
+    content: "\e624";
+}
+
+.icon-iop-guide:before {
+    content: "\e625";
+}
+
+.icon-iop-replay:before {
+    content: "\e626";
+}
+
+.icon-iop-favourite:before {
+    content: "\e627";
+}
+
+.icon-iop-series:before {
+    content: "\e628";
+}
+
+.icon-iop-share:before {
+    content: "\e629";
+}
+
+.icon-iop-record:before {
+    content: "\e62a";
+}
+
+.icon-iop-reminder:before {
+    content: "\e62b";
+}
+
+.icon-iop-apple-store:before {
+    content: "\e62c";
+}
+
+.icon-iop-google-play:before {
+    content: "\e62d";
+}
+
+.icon-iop-arrow-left-roundup:before {
+    content: "\e614";
+}
+
+.icon-iop-arrow-left-rounddown:before {
+    content: "\e615";
+}
+
+.icon-iop-arrow-right-rounddown:before {
+    content: "\e616";
+}
+
+.icon-iop-arrow-right-roundup:before {
+    content: "\e617";
+}
+
+.icon-iop-hamburger:before {
+    content: "\e613";
+}
+
+.icon-iop-prev:before {
+    content: "\e60e";
+}
+
+.icon-iop-next:before {
+    content: "\e60f";
+}
+
+.icon-iop-circle:before {
+    content: "\e610";
+}
+
+.icon-iop-close:before {
+    content: "\e60d";
+}
+
+.icon-iop-support-billing:before {
+    content: "\e607";
+}
+
+.icon-iop-support-contact:before {
+    content: "\e608";
+}
+
+.icon-iop-support-installation:before {
+    content: "\e609";
+}
+
+.icon-iop-support-products:before {
+    content: "\e60a";
+}
+
+.icon-iop-support-programming:before {
+    content: "\e60b";
+}
+
+.icon-iop-support-technical:before {
+    content: "\e60c";
+}
+
+.icon-iop-contact:before {
+    content: "\e604";
+}
+
+.icon-iop-facebook:before {
+    content: "\e605";
+}
+
+.icon-iop-twitter:before {
+    content: "\e606";
+}
+
+.icon-iop-google:before {
+    content: "\e611";
+}
+
+.icon-iop-pinterest:before {
+    content: "\e612";
+}
+
+.icon-iop-account:before {
+    content: "\e600";
+}
+
+.icon-iop-cart:before {
+    content: "\e601";
+}
+
+.icon-iop-search:before {
+    content: "\e602";
+}
+
+.icon-iop-sky:before {
+    content: "\e603";
+}

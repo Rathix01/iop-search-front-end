@@ -1,0 +1,117 @@
+$tvguide-font-heading: 'Euclid SKY', 'Arial Black', Gadget, sans-serif !default;
+$tvguide-font-body: Arial, sans-serif !default;
+$tvguide-font-icon: 'IOP Icons' !default;
+$tvguide-images-directory: '../images/' !default;
+
+@mixin tvguide-mobile {
+	.direction-btns, .date-button, .week-change-button {
+		display:none !important;
+	}
+
+	.tv-guide-header {
+		height:120px;
+	}
+
+	.tv-guide-date-buttons {
+		position:static;
+		height:40px;
+		width:100% !important;
+	}
+
+	.epg-title {
+		display:none;
+	}
+
+	.genre-filter {
+		margin-top:-45px;
+		text-align: center;
+		width:85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.genre-filter select {
+		width:100% !important;
+		text-align: center !important;
+	}
+
+	.genre-filter option {
+		width:100% !important;
+		text-align: center !important;
+	}
+
+	.tv-guide-date-buttons .day-view {
+		display:block;
+	}
+	.tv-guide-header .center .timeslots {
+		top:50px !important;
+	}
+
+	.tv-guide-header .mobile-direction-btns {
+		display:block;
+	}
+
+	.tv-guide-date-buttons .day-view {
+		display:block !important;
+		width:200px;
+		height:30px;
+		padding: 5px 0px 0px 0px;
+		cursor: pointer;
+		line-height: 25px;
+		text-align:center;
+		color:#FFF;
+		border-radius: 4px;
+		font-size: small;
+		font-family: $tvguide-font-heading;
+		display:none;
+		z-index: 1;
+		position:static;
+		margin:5px auto;
+	}
+	.tv-guide-date-buttons .date-text {
+		width:200px;
+		padding-top: 3px;
+	}
+
+
+	.tv-guide-date-buttons .date-text span {
+		z-index: 1;
+		text-align: center;
+		display: inline-block;
+		font-size: x-large;
+	}
+
+	.mobile-direction-btns {
+		display:none;
+		z-index:10 !important;
+		width: 200px;
+		margin-top:-5px;
+		position:relative;
+		background: #ccc;
+	}
+
+	.mobile-direction-btns button {
+		background:transparent;
+		width: 75px;
+		color:#FFF;
+		border:none;
+		height:40px;
+		font-weight:bold;
+		outline:none;
+		font-family: $tvguide-font-heading;
+		font-size: x-large;
+		position: absolute;
+	}
+	.mobile-direction-btns .left-24-hrs {
+		left:-15px;
+
+	}
+	.mobile-direction-btns .right-24-hrs {
+		right:-15px;
+	}
+
+	.timeslots, .time-slot {
+		background:#111 !important;
+		height:30px;
+	}
+}

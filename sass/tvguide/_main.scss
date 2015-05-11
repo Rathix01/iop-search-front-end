@@ -1,0 +1,222 @@
+$tvguide-font-heading: 'Euclid SKY', 'Arial Black', Gadget, sans-serif !default;
+$tvguide-font-body: Arial, sans-serif !default;
+$tvguide-font-icon: 'IOP Icons' !default;
+$tvguide-images-directory: '../images/' !default;
+
+@mixin tvguide-main {
+
+	.search-head {
+
+		background:#000;
+		padding-top: 10px;
+
+		h1 {
+			color:white;
+			font-family: $tvguide-font-heading;
+			margin: 10px 20px 20px;
+		}
+
+		.search-input-group {
+
+			position:relative;
+			width: 95%;
+			border-bottom:solid 1px #FFF;
+			margin-left:20px;
+			height: 30px;
+			line-height: 30px;
+			overflow:none;
+			padding-bottom: 5px;
+
+			.icon {
+				color:white;
+				position: absolute;
+				left: 5px;
+				top:2px;
+				font-size: 1.6em;
+			}
+
+			.search-input-field {
+				width: 100%;
+				border: none;
+				background: transparent;
+				height:30px;
+				line-height: 30px;
+				margin-left: 5px;
+				font-family: $tvguide-font-heading;
+				outline:none;
+				color:#fff;
+				font-size: 1.4em;
+				text-indent: 40px;
+			}
+
+			.clear-button {
+				background: #000;
+				position: absolute;
+				right: 5px;
+				top:0px;
+				color:white;
+				border:none;
+				height:30px;
+				line-height: 30px;
+				outline: none;
+			}
+
+			.clear-button {
+				font-weight: bold;
+			}
+		}
+
+		.autoCompleteData {
+
+			position:absolute;
+			z-index: 999;
+			background:white;
+			width:95%;
+			border:solid 1px #000;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+			left:20px;
+			font-family: $tvguide-font-body;
+
+			.auto-complete-row {
+				font-family: $tvguide-font-body;
+				height: 30px;
+				line-height: 30px;
+				text-indent: 10px;
+			}
+
+			.is-active, .is-not-active:hover {
+				background: black;
+				color:white;
+			}
+
+			.is-active {
+				font-weight: bold;
+			}
+		}
+
+		.ac-show {
+			display:block;
+		}
+
+		.ac-hide {
+			display:none;
+		}
+
+		.filter-list {
+
+			min-height: 40px;
+			border:solid 1px #000;
+			background:black;
+			padding-left:5px;
+			padding-top:25px;
+			padding-bottom: 10px;
+			font-family: $tvguide-font-heading;
+			margin-left: 20px;
+
+			.filter-item {
+				float: left;
+				max-width:150px;
+				padding: 5px;
+				border-radius: 6px;
+				margin-top:5px;
+				margin-right: 5px;
+				cursor: pointer; 
+				padding: 4px 10px;
+			}
+
+			.isActive {
+				background: #FFD232;
+				color:black;
+			}
+
+			.isNotActive {
+				color:white;
+			}
+		}
+
+	}
+	
+
+	.search-results {
+		margin-top: 30px;
+	}
+
+	.detail-node {
+		bottom:0px;
+		height:200px;
+		width:100%;
+		line-height: 25px;
+		padding:0px;
+		top:0px;
+		z-index: 10;
+		border-bottom:solid 1px black;
+		padding: 20px;
+
+		.icon {
+			font-size: 1.3em;
+			margin-right: 5px;
+		}
+
+	}
+
+	.field-container {
+		height:100%;
+		margin-top:-15px;
+	}
+	.detail-node h2 {
+		font-family: $tvguide-font-heading;
+		line-height: 20px;
+	}
+
+	.detail-node .detail-summary {
+		margin-top: -10px;
+		margin-bottom: 10px;
+		font-family: $tvguide-font-heading;
+	}
+	.detail-node .detail-synopsis {
+		color:#555;
+		line-height: 22px;
+	}
+	.detail-text {
+		position:relative;
+	}
+	.detail-text, .detail-image {
+		height:120px;
+	}
+	.detail-image {
+		border:solid 1px white;
+		width:200px;
+		position:absolute;
+		text-align: center;
+		line-height: 110px;
+		display:none;
+	}
+	.detail-text {
+		/*margin-left: 220px;*/
+
+	}
+	.detail-node .background-strip {
+		content:' ';
+		background:#CCC;
+		position:absolute;
+		left:-2500px;
+		top:0px;
+		width:10000px;
+		z-index:-1;
+	}
+	.detail-node .close-detail {
+		position:absolute;
+		top:0px;
+		right:15px;
+		border:solid 2px #fff;
+		height:20px;
+		width:20px;
+		border-radius: 20px;
+		text-indent: 6px;
+		line-height: 18px;
+		display:block;
+		cursor: pointer;
+	}
+
+
+}

@@ -1,0 +1,18 @@
+// The shared typography configuration with the IOP theme.
+ 
+/**
+ Tablet Max: 75em
+ Phone Max: 64em
+*/
+
+@import 'typography';
+@import 'main';
+@import 'mobile';
+@import 'single-channel';
+
+@include tvguide-main;
+
+// Mobile specific styling.
+@media screen and (max-width: 64em) {
+	@include tvguide-mobile;
+}
